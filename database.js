@@ -83,7 +83,10 @@ app.get('/dbConnected', function(req, res)
   if(helper.dbConnected()==true)
   { // connected to the DB
     retjson.success = "Succesfully connected to the DB.";
-  
+
+    // switch to the desired database
+    var database = helper.dbref().db("dhOpenShift");
+
     // Let's fetch the list of collections currently stored in the DB
     helper.dbref().listCollections().toArray(function(err, items) 
     {
