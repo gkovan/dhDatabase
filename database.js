@@ -89,7 +89,8 @@ app.get('/dbConnected', function(req, res)
 console.log('  ... now using DB (dhOpenShift)');
 
     // Let's fetch the list of collections currently stored in the DB
-    helper.dbref().listCollections().toArray(function(err, items) 
+    //helper.dbref().listCollections().toArray(function(err, items) 
+    database.listCollections().toArray(function(err, items) 
     {
       // get the dbURL
       retjson.url = helper.dburl();
