@@ -123,12 +123,8 @@ app.get('/dbCreate', function (req, res)
   if(helper.dbConnected()==true)
   { // connected to the DB
 
-     // switch to the desired target database
-     var database = helper.dbref().db("dhOpenShift");
- console.log('  ... now using DB (dhOpenShift)');
-
     // Create Counter Collection and be sure it's built prior to building any other collections.
-    _createCounterColl( database,
+    _createCounterColl(
     function(err)
     { // callback, called when Counter collection is fully built and initialized.
       if(!err)
@@ -140,19 +136,19 @@ app.get('/dbCreate', function (req, res)
         // we will assume everything builds correctly and check on the status later.
 
         // Create Client Collection
-//        _createClientColl();
+        _createClientColl();
 
         // Create Agent Collection
-//        _createAgentColl();
+        _createAgentColl();
 
         // Create Office Collection
-//        _createNotificationColl();
+        _createNotificationColl();
 
         // Create Office Collection
-//        _createOfficeColl();
+        _createOfficeColl();
 
         // Create Property Collection
-//        _createPropertyColl();
+        _createPropertyColl();
       }
     });
 
