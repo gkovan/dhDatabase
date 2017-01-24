@@ -86,6 +86,7 @@ app.get('/dbConnected', function(req, res)
 
     // switch to the desired database
     var database = helper.dbref().db("dhOpenShift");
+console.log('  ... now using DB (dhOpenShift)');
 
     // Let's fetch the list of collections currently stored in the DB
     helper.dbref().listCollections().toArray(function(err, items) 
