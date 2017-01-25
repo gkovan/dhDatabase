@@ -88,8 +88,8 @@ app.get('/dbConnected', function(req, res)
     // Let's fetch the list of collections currently stored in the DB
     helper.dbref().listCollections().toArray(function(err, items) 
     {
-      // get the dbURL
-      retjson.url = helper.dburl();
+      // get the dbName
+      retjson.dbName = helper.dbName();
 
       // add the list of collections found to the return JSON
       retjson.collections = items;
