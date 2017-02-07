@@ -1,4 +1,7 @@
 mongourl=mongoDB://cpoAdmin:enitlavo908#@158.85.248.111:8888/admin
+MONGODB_DATABASE=admin
+MONGODB_USER=cpoAdmin
+MONGODB_PASSWORD=enitlavo908# 
 mongoDatabse=dhOpenShift
 mongoUser=cpoUser
 mongoPassword=enitlavo908# 
