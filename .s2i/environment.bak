@@ -1,0 +1,9 @@
+mongourl=mongoDB://cpoAdmin:enitlavo908#@158.85.248.111:8888/admin
+mongoDatabase=dhOpenShift
+mongoUser=cpoUser
+mongoPassword=enitlavo908# 
+#MONGODB_DATABASE=admin
+#MONGODB_USER=cpoAdmin
+#MONGODB_PASSWORD=enitlavo908#
+#mongourl1=mongoDB://cpoUser:enitlavo908#@158.85.248.111:8888/dhDatabase
+
